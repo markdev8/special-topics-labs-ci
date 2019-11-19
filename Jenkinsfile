@@ -17,7 +17,7 @@ node {
         }
     }
   } finally {
-    junit 'build/reports/**/*.xml'
+    junit '/target/surefire-reports/*.xml'
   }
 
   //  you should add a test report here  \inserted an attempt above
