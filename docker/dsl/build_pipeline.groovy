@@ -1,8 +1,8 @@
 pipelineJob('build-pipeline-job') { 
 
   // This is the repo that contains the Jenkinsfile you want to use to define your pipeline \switched
-  //def repo = 'https://github.com/markdev8/special-topics-labs-ci'  // \changed to my repo
-  def repo = '/home/beachm4/special-topics-labs/special-topics-labs-ci'  // \for local attempt
+  def repo = 'https://github.com/markdev8/special-topics-labs-ci'  // \changed to my repo
+  //def repo = '/home/beachm4/special-topics-labs/special-topics-labs-ci'  // \for local attempt
 
   description("Your App Pipeline") 
   keepDependencies(false) 

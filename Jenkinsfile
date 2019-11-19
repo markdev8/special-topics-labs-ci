@@ -2,8 +2,8 @@
 node {
   stage('checkout sources') {
         // You should change this to be the appropriate thing \changed
-        //git url: 'https://github.com/markdev8/special-topics-labs-ci'
-          git url: '/home/beachm4/special-topics-labs/special-topics-labs-ci'
+        git url: 'https://github.com/markdev8/special-topics-labs-ci'
+        //  git url: '/home/beachm4/special-topics-labs/special-topics-labs-ci'
 
   }
 
