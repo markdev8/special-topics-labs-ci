@@ -10,17 +10,15 @@ node {
   try {
 
     stage('Build') {
-      echo 'Hello WORLD'
-      // you should build this repo with a maven build step here \snippet inserted
+        echo 'Hello WORLD'
+        // you should build this repo with a maven build step here \snippet inserted
         withMaven (maven: 'maven3') {
-          sh "mvn package"
-
-        } finally {
-            junit "build/reports/**/*.xml"
+            sh "mvn package"
         }
-
     }
+  } finally {
+    junit "build/reports/**/*.xml"
   }
-  //  you should add a test report here  \inserted an attempt above
 
+  //  you should add a test report here  \inserted an attempt above
 }
